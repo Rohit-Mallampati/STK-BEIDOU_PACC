@@ -1,0 +1,228 @@
+stk.v.11.0
+WrittenBy    STK_v11.0.0
+
+BEGIN CoverageDefinition
+
+Name        ConUSA_COV
+
+BEGIN GridDefinition
+
+    VersionIndicator     20080103
+    Begin                CustomRegions
+        AreaTarget    AreaTarget/United_States
+        CheckForHoles		Yes
+        AllowSmallRegionIsotropicAlgorithm
+    End                  CustomRegions
+    LatResolution        1.000000000000000e+000
+    LonResolution        1.000000000000000e+000
+    UsePolarRegions        Yes
+    GridClass            Target
+    PointLocationMethod  EqualArea
+    CustomPtAltMethod    ValueFromFile
+    CentralBody          Earth
+    GroundAltMethod      UseAltType
+    GroundAlt            0.000000
+    AltitudeMethod       Altitude
+    Begin AltitudeList
+        0.000000
+    End AltitudeList
+
+END GridDefinition
+
+BEGIN AccessDefinition
+
+    DataRetention        AllData
+    Convergence          0.005000
+    AbsValueConvergence  1.000000e-014
+    RelValueConvergence  1.000000e-008
+    MaxTimeStep          360.000000
+    MinTimeStep          1.000000e-002
+    UseLightTimeDelay    No
+    TimeSense            PerAsset
+    DetectEventsUsingSamplesOnly No
+    AutoRecompute        No
+    UseAllAssetAccess        No
+    AssetSatisType           AtLeast
+    AssetSatisThreshold      1
+    AccessSaveMode       SaveWith
+    RegionAccessAccel    Auto
+
+END AccessDefinition
+
+BEGIN AssetList
+
+    Constellation/CNSS   Active 
+    Required No
+    UseConstConstraints No
+    Begin SubAssets
+        Satellite/BEIDOU-2_G7_41586   Active
+    Required No
+        Satellite/BEIDOU-2_G8_44231   Active
+    Required No
+        Satellite/BEIDOU-3_G2_45344   Active
+    Required No
+        Satellite/BEIDOU-3_IGSO-2_44337   Active
+    Required No
+        Satellite/BEIDOU-3_IGSO-3_44709   Active
+    Required No
+        Satellite/BEIDOU-3_M10_43582   Active
+    Required No
+        Satellite/BEIDOU-3_M11_43602   Active
+    Required No
+        Satellite/BEIDOU-3_M12_43603   Active
+    Required No
+        Satellite/BEIDOU-3_M13_43622   Active
+    Required No
+        Satellite/BEIDOU-3_M14_43623   Active
+    Required No
+        Satellite/BEIDOU-3_M15_43647   Active
+    Required No
+        Satellite/BEIDOU-3_M16_43648   Active
+    Required No
+        Satellite/BEIDOU-3_M17_43706   Active
+    Required No
+        Satellite/BEIDOU-3_M18_43707   Active
+    Required No
+        Satellite/BEIDOU-3_M19_44864   Active
+    Required No
+        Satellite/BEIDOU-3_M1_43001   Active
+    Required No
+        Satellite/BEIDOU-3_M20_44865   Active
+    Required No
+        Satellite/BEIDOU-3_M21_44793   Active
+    Required No
+        Satellite/BEIDOU-3_M22_44794   Active
+    Required No
+        Satellite/BEIDOU-3_M23_44542   Active
+    Required No
+        Satellite/BEIDOU-3_M24_44543   Active
+    Required No
+        Satellite/BEIDOU-3_M2_43002   Active
+    Required No
+        Satellite/BEIDOU-3_M3_43107   Active
+    Required No
+        Satellite/BEIDOU-3_M4_43108   Active
+    Required No
+        Satellite/BEIDOU-3_M5_43207   Active
+    Required No
+        Satellite/BEIDOU-3_M6_43208   Active
+    Required No
+        Satellite/BEIDOU-3_M7_43245   Active
+    Required No
+        Satellite/BEIDOU-3_M8_43246   Active
+    Required No
+        Satellite/BEIDOU-3_M9_43581   Active
+    Required No
+        Satellite/BEIDOU_IGSO-6_41434   Active
+    Required No
+        Satellite/BEIDOU_IGSO-7_43539   Active
+    Required No
+        Satellite/BeidouG1_36287   Active
+    Required No
+        Satellite/BeidouG4_37210   Active
+    Required No
+        Satellite/BeidouG5_38091   Active
+    Required No
+        Satellite/BeidouG6_38953   Active
+    Required No
+        Satellite/BeidouIgso1_36828   Active
+    Required No
+        Satellite/BeidouIgso2_37256   Active
+    Required No
+        Satellite/BeidouIgso3_37384   Active
+    Required No
+        Satellite/BeidouIgso4_37763   Active
+    Required No
+        Satellite/BeidouIgso5_37948   Active
+    Required No
+        Satellite/BeidouM3_38250   Active
+    Required No
+        Satellite/BeidouM4_38251   Active
+    Required No
+        Satellite/BeidouM6_38775   Active
+    Required No
+    End SubAssets
+
+END AssetList
+
+BEGIN Interval
+
+    AccStart             9 May 2020 02:00:00.000000000
+    AccStop              16 May 2020 02:00:00.000000000
+    UseScenarioInterval       No
+    AccIntervalPtr
+	BEGIN	EVENTINTERVAL
+			EventInterval
+				BEGIN	EVENTINTERVAL
+					Type	EVENTINTERVAL_LINKTO
+					Name	AnalysisInterval
+					AbsolutePath	Scenario
+				END	EVENTINTERVAL
+			IntervalState	Implicit
+	END	EVENTINTERVAL
+
+
+END Interval
+
+Begin SavedAccesses
+    FileName: ConUSA_COV.cva
+End SavedAccesses
+
+BEGIN Extensions
+    
+    BEGIN Graphics
+
+BEGIN Attributes
+
+    GridMarkerStyle          1
+    GridColor                #ffffff
+    ProgressColor            #00ffff
+    SatisfactionColor        #00ff00
+    GridTranslucency         0.500000
+    SatisfactionTranslucency 0.700000
+
+END Attributes
+
+BEGIN Graphics
+
+    Show                 Yes
+    ShowGrid             No
+    ShowRegions          No
+    ShowRegionsText      No
+    ShowPoints           No
+    FillPoints           No
+    ShowProgress         Yes
+    ShowSatisfaction     No
+
+END Graphics
+    END Graphics
+    
+    BEGIN ADFFileData
+    END ADFFileData
+    
+    BEGIN Desc
+    Begin ShortText
+
+    End ShortText
+    Begin LongText
+
+    End LongText
+    END Desc
+    
+    BEGIN VO
+    END VO
+
+END Extensions
+
+BEGIN SubObjects
+
+Class FigureOfMerit
+
+	PACC
+
+END Class
+
+END SubObjects
+
+END CoverageDefinition
+

@@ -1,0 +1,77 @@
+stk.v.11.0
+WrittenBy    STK_v11.0.0
+
+BEGIN Constellation
+
+Name  CNSS
+BEGIN Definition
+
+   Type        Constellation
+   Operator    Or
+   Order       1
+   IsRelay     No
+    Object  Satellite/BEIDOU-2_G7_41586
+    Object  Satellite/BEIDOU-2_G8_44231
+    Object  Satellite/BEIDOU-3_G2_45344
+    Object  Satellite/BEIDOU-3_IGSO-2_44337
+    Object  Satellite/BEIDOU-3_IGSO-3_44709
+    Object  Satellite/BEIDOU-3_M10_43582
+    Object  Satellite/BEIDOU-3_M11_43602
+    Object  Satellite/BEIDOU-3_M12_43603
+    Object  Satellite/BEIDOU-3_M13_43622
+    Object  Satellite/BEIDOU-3_M14_43623
+    Object  Satellite/BEIDOU-3_M15_43647
+    Object  Satellite/BEIDOU-3_M16_43648
+    Object  Satellite/BEIDOU-3_M17_43706
+    Object  Satellite/BEIDOU-3_M18_43707
+    Object  Satellite/BEIDOU-3_M19_44864
+    Object  Satellite/BEIDOU-3_M1_43001
+    Object  Satellite/BEIDOU-3_M20_44865
+    Object  Satellite/BEIDOU-3_M21_44793
+    Object  Satellite/BEIDOU-3_M22_44794
+    Object  Satellite/BEIDOU-3_M23_44542
+    Object  Satellite/BEIDOU-3_M24_44543
+    Object  Satellite/BEIDOU-3_M2_43002
+    Object  Satellite/BEIDOU-3_M3_43107
+    Object  Satellite/BEIDOU-3_M4_43108
+    Object  Satellite/BEIDOU-3_M5_43207
+    Object  Satellite/BEIDOU-3_M6_43208
+    Object  Satellite/BEIDOU-3_M7_43245
+    Object  Satellite/BEIDOU-3_M8_43246
+    Object  Satellite/BEIDOU-3_M9_43581
+    Object  Satellite/BEIDOU_IGSO-6_41434
+    Object  Satellite/BEIDOU_IGSO-7_43539
+    Object  Satellite/BeidouG1_36287
+    Object  Satellite/BeidouG4_37210
+    Object  Satellite/BeidouG5_38091
+    Object  Satellite/BeidouG6_38953
+    Object  Satellite/BeidouIgso1_36828
+    Object  Satellite/BeidouIgso2_37256
+    Object  Satellite/BeidouIgso3_37384
+    Object  Satellite/BeidouIgso4_37763
+    Object  Satellite/BeidouIgso5_37948
+    Object  Satellite/BeidouM3_38250
+    Object  Satellite/BeidouM4_38251
+    Object  Satellite/BeidouM6_38775
+   SaveMode    0
+   UseLoadIntervalFile    No
+
+END Definition
+
+BEGIN Extensions
+    
+    BEGIN ADFFileData
+    END ADFFileData
+    
+    BEGIN Desc
+    Begin ShortText
+
+    End ShortText
+    Begin LongText
+
+    End LongText
+    END Desc
+
+END Extensions
+
+END Constellation
